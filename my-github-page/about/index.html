@@ -11,28 +11,35 @@
             margin: 0;
             padding: 0;
             color: #24292f; /* GitHub primary text color */
+            background-color: #0d1117; /* GitHub Universe dark theme background */
         }
 
         header {
-            background-color: #161b22; /* GitHub header background */
+            background: linear-gradient(90deg, #6f42c1, #0366d6); /* GitHub Universe gradient */
             color: #ffffff; /* White text for contrast */
             padding: 20px 10%;
             text-align: center;
+            border-bottom: 4px solid #ff7b72; /* Accent color */
         }
 
         header h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 2.8em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         header p {
-            font-size: 1.2em;
+            font-size: 1.3em;
             margin-top: 10px;
         }
 
         .container {
-            width: 80%;
-            margin: 20px auto;
+            width: 90%;
+            margin: 30px auto;
+            background-color: #161b22; /* Darker section background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         .section {
@@ -40,9 +47,11 @@
         }
 
         h2 {
-            color: #0969da; /* GitHub blue */
-            border-bottom: 2px solid #0969da;
+            color: #58a6ff; /* GitHub Universe light blue */
+            border-bottom: 2px solid #58a6ff;
             padding-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .highlights ul {
@@ -52,33 +61,46 @@
 
         .highlights ul li {
             margin: 10px 0;
-            background-color: #f6f8fa; /* GitHub light gray */
-            padding: 10px;
-            border-left: 4px solid #0969da; /* GitHub blue */
+            background-color: #21262d; /* GitHub Universe card background */
+            padding: 15px;
+            border-left: 4px solid #ff7b72; /* Accent color */
+            border-radius: 5px;
         }
 
         .personal-info {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
+            justify-content: center;
         }
 
         .personal-info img {
             width: 30%;
             border-radius: 10px;
-            border: 2px solid #0969da; /* GitHub blue */
+            border: 3px solid #58a6ff; /* Light blue border */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         footer {
-            background-color: #f6f8fa; /* GitHub footer background */
+            background-color: #0d1117; /* Footer matches background */
             text-align: center;
-            padding: 10px 0;
+            padding: 15px 0;
             margin-top: 20px;
+            border-top: 4px solid #6f42c1; /* Accent color */
         }
 
         footer p {
             margin: 0;
-            color: #57606a; /* GitHub secondary text color */
+            color: #8b949e; /* Muted text */
+        }
+
+        a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -133,6 +155,7 @@
 <footer>
     <p>&copy; 2025 Orlando Quesada | All Rights Reserved</p>
 </footer>
+
 </body>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
