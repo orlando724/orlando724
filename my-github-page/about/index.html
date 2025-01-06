@@ -1,10 +1,136 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orlando Quesada - Technical Program Manager</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #24292f; /* Main text color */
+            background: linear-gradient(180deg, #a3f7b5, #ffffff); /* Inspired by GitHub Universe */
+        }
+
+        header {
+            background: linear-gradient(90deg, #6f42c1, #0366d6, #28a745); /* Vibrant header gradient */
+            color: #ffffff; /* White text for contrast */
+            padding: 30px 10%;
+            text-align: center;
+            border-bottom: 6px solid #ff7b72; /* Accent color */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+        }
+
+        header p {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+
+        .container {
+            width: 90%;
+            margin: 30px auto;
+            background-color: #ffffff;
+            color: #24292f; /* Text color */
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #0366d6; /* Vibrant blue accent */
+            border-bottom: 3px solid #0366d6;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+        }
+
+        .highlights ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .highlights ul li {
+            margin: 10px 0;
+            background-color: #f6f8fa; /* Light gray card background */
+            padding: 15px;
+            border-left: 6px solid #28a745; /* Green accent */
+            border-radius: 8px;
+        }
+
+        .carousel {
+            width: 80%;
+            margin: 20px auto;
+            position: relative;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+        }
+
+        .carousel img {
+            width: 100%; /* Make images responsive */
+            height: auto;
+            display: none;
+        }
+
+        .carousel img.active {
+            display: block;
+        }
+
+        footer {
+            background: linear-gradient(90deg, #6f42c1, #0366d6, #28a745);
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+            color: #ffffff;
+            border-top: 6px solid #ff7b72;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1.2em;
+            }
+
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+
+            .carousel {
+                width: 90%;
+            }
+        }
+    </style>
     <script>
         let currentIndex = 0;
 
@@ -67,7 +193,11 @@
             Google, who earned his name because my kids thought it would be funny that every time we said 'Hey Google,' all the 
             Google Home devices would trigger.
         </p>
-        
+        <p>
+        Connect with me on <a href="https://www.linkedin.com/in/oquesada" target="_blank" onclick="window.open('linkedin://in/oquesada', '_self')">LinkedIn</a>.<br>
+        Check out my <a href="https://github.com/orlando724" target="_blank">GitHub repositories</a>.<br>
+        Check out my <a href="https://github.com/users/orlando724/projects/1" target="_blank">GitHub Project<a/>.
+    </p>
         <div class="carousel">
             <img src="images/picture1.jpg" alt="Paris">
             <img src="images/picture2.jpg" alt="Japan">
@@ -75,10 +205,6 @@
             <img src="images/picture4.jpg" alt="Basketball">
             <img src="images/picture5.jpg" alt="Pet">
         </div>
-        <p>
-            Connect with me on <a href="https://www.linkedin.com/in/oquesada" target="_blank" onclick="window.open('linkedin://in/oquesada', '_self')">LinkedIn</a>.<br>
-            Check out my <a href="https://github.com/orlando724" target="_blank">GitHub repositories</a>.
-        </p>
     </section>
 
 </div>
