@@ -10,7 +10,7 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            color: #24292f; /* GitHub primary text color */
+            color: #f0f6fc; /* GitHub primary text color */
             background-color: #0d1117; /* GitHub Universe dark theme background */
         }
 
@@ -36,7 +36,7 @@
         .container {
             width: 90%;
             margin: 30px auto;
-            background-color: #161b22; /* Darker section background */
+            background-color: #0d1117; color: #c9d1d9; /* Darker section background */
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -61,24 +61,46 @@
 
         .highlights ul li {
             margin: 10px 0;
-            background-color: #21262d; /* GitHub Universe card background */
+            background-color: #161b22; /* GitHub Universe card background */
             padding: 15px;
             border-left: 4px solid #ff7b72; /* Accent color */
             border-radius: 5px;
         }
 
-        .personal-info {
+        .carousel {
             display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
-        .personal-info img {
-            width: 30%;
-            border-radius: 10px;
-            border: 3px solid #58a6ff; /* Light blue border */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        .carousel img {
+            width: 100%;
+            transition: transform 0.5s ease;
+        }
+
+        .carousel-inner {
+            display: flex;
+            width: 300%; /* Adjust for number of images */
+        }
+
+        .carousel-buttons {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .carousel-buttons button {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
         }
 
         footer {
@@ -103,6 +125,26 @@
             text-decoration: underline;
         }
     </style>
+    <script>
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            const slides = document.querySelector('.carousel-inner');
+            const totalSlides = slides.children.length;
+            currentIndex = (index + totalSlides) % totalSlides;
+            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        function nextSlide() {
+            showSlide(currentIndex + 1);
+        }
+
+        function previousSlide() {
+            showSlide(currentIndex - 1);
+        }
+
+        setInterval(nextSlide, 3000); /* Auto-slide every 3 seconds */
+    </script>
 </head>
 <body>
 
@@ -143,10 +185,16 @@
             My inclusive mindset extends to all aspects of life, embracing diversity and fostering connections that
             enrich both personal and professional experiences.
         </p>
-        <div class="images">
-            <img src="images/picture1.jpg" alt="Family Photo">
-            <img src="images/picture2.jpg" alt="Hobby">
-            <img src="images/picture3.jpg" alt="Favorite Place">
+        <div class="carousel">
+            <div class="carousel-inner">
+                <img src="images/picture1.jpg" alt="Family Photo">
+                <img src="images/picture2.jpg" alt="Hobby">
+                <img src="images/picture3.jpg" alt="Favorite Place">
+            </div>
+            <div class="carousel-buttons">
+                <button onclick="previousSlide()">&#10094;</button>
+                <button onclick="nextSlide()">&#10095;</button>
+            </div>
         </div>
     </section>
 
