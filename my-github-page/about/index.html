@@ -76,15 +76,16 @@
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         }
 
-        .carousel img {
-            width: 50%; /* Full width for single image */
+       .carousel img {
+            width: 100%; /* Show one image at a time */
+            flex: 0 0 100%;
             border-radius: 12px;
             transition: transform 0.5s ease;
         }
 
         .carousel-inner {
             display: flex;
-            width: 100%;
+            width: 300%; /* Adjusted to accommodate 3 images */
             transition: transform 0.5s ease;
         }
 
