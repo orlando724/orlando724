@@ -74,57 +74,19 @@
             position: relative;
             border-radius: 12px;
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
         }
 
-       .carousel img {
-    width: 100%; /* Make images responsive */
-    height: auto;
-    flex: 0 0 100%;
-    border-radius: 12px;
-    transition: transform 0.5s ease;
+        .carousel img {
+            width: 100%; /* Make images responsive */
+            height: auto;
+            display: none;
         }
 
-        .carousel-inner {
-    display: flex;
-    width: 100%; /* Adjusted to accommodate 1 image */
-    transition: transform 0.5s ease;
+        .carousel img.active {
+            display: block;
         }
 
-        .carousel-buttons {
-            position: absolute;
-            top: 50%;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            transform: translateY(-50%);
-        }
-
-        .carousel-buttons button {
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            padding: 12px;
-            cursor: pointer;
-            border-radius: 50%;
-        }
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2em;
-    }
-
-    header p {
-        font-size: 1.2em;
-    }
-
-    .container {
-        width: 95%;
-        padding: 15px;
-    }
-
-    .carousel {
-        width: 90%;
-    }
-}
         footer {
             background: linear-gradient(90deg, #6f42c1, #0366d6, #28a745);
             text-align: center;
@@ -147,26 +109,46 @@
         a:hover {
             text-decoration: underline;
         }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1.2em;
+            }
+
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+
+            .carousel {
+                width: 90%;
+            }
+        }
     </style>
     <script>
         let currentIndex = 0;
 
         function showSlide(index) {
-            const slides = document.querySelector('.carousel-inner');
-            const totalSlides = slides.children.length;
-            currentIndex = (index + totalSlides) % totalSlides;
-            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+            const slides = document.querySelectorAll('.carousel img');
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
         }
 
         function nextSlide() {
-            showSlide(currentIndex + 1);
+            const slides = document.querySelectorAll('.carousel img');
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
         }
 
-        function previousSlide() {
-            showSlide(currentIndex - 1);
-        }
-
-        setInterval(nextSlide, 4000); /* Auto-slide every 4 seconds */
+        document.addEventListener('DOMContentLoaded', () => {
+            showSlide(currentIndex);
+            setInterval(nextSlide, 4000); /* Auto-slide every 4 seconds */
+        });
     </script>
 </head>
 <body>
@@ -209,17 +191,11 @@
             enrich both personal and professional experiences.
         </p>
         <div class="carousel">
-            <div class="carousel-inner">
-                <img src="images/picture1.jpg" alt="Paris">
-                <img src="images/picture2.jpg" alt="Japan">
-                <img src="images/picture3.jpg" alt="Dubai">
-                <img src="images/picture4.jpg" alt="Basketball">
-                <img src="images/picture5.jpg" alt="Pet">
-            </div>
-            <div class="carousel-buttons">
-                <button onclick="previousSlide()">&#10094;</button>
-                <button onclick="nextSlide()">&#10095;</button>
-            </div>
+            <img src="images/picture1.jpg" alt="Paris">
+            <img src="images/picture2.jpg" alt="Japan">
+            <img src="images/picture3.jpg" alt="Dubai">
+            <img src="images/picture4.jpg" alt="Basketball">
+            <img src="images/picture5.jpg" alt="Pet">
         </div>
     </section>
 
