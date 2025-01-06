@@ -77,10 +77,11 @@
         }
 
        .carousel img {
-            width: 30%; /* Show one image at a time */
-            flex: 0 0 100%;
-            border-radius: 12px;
-            transition: transform 0.5s ease;
+    width: 100%; /* Make images responsive */
+    height: auto;
+    flex: 0 0 100%;
+    border-radius: 12px;
+    transition: transform 0.5s ease;
         }
 
         .carousel-inner {
@@ -106,7 +107,24 @@
             cursor: pointer;
             border-radius: 50%;
         }
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
 
+    header p {
+        font-size: 1.2em;
+    }
+
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .carousel {
+        width: 90%;
+    }
+}
         footer {
             background: linear-gradient(90deg, #6f42c1, #0366d6, #28a745);
             text-align: center;
