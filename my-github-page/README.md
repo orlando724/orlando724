@@ -4,16 +4,16 @@ This project is a personal GitHub page designed to showcase my background and ex
 
 ## Project Structure
 
-- `index.html`: The main HTML document that serves as the entry point for the GitHub page.
-- `about/index.html`: Contains the HTML for the "About Me" section.
+- `index.html`: Contains the HTML for the "About Me" section.
 - `css/styles.css`: Styles for the GitHub page, defining layout, colors, fonts, and other visual aspects.
+- `script.js`: Contains information on the image slideshow.
 
 ## Setup Instructions
 
 1. Clone the repository to your local machine.
-2. Open the `index.html` file in a web browser to view the GitHub page.
-3. Customize the content in the `about/index.html` file to reflect your personal background.
-4. Modify the `css/styles.css` file to change the visual appearance of the page as desired.
+2. Customize the content in the `index.html` file to reflect your personal background.
+3. Modify the `css/styles.css` file to change the visual appearance of the page as desired.
+4. Modify the `script.js` file to change the image slideshow of the page as desired.
 
 ## License
 
