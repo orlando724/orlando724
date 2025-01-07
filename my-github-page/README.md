@@ -7,6 +7,7 @@ This project is a personal GitHub page designed to showcase my background and ex
 - `index.html`: Contains the HTML for the "About Me" section.
 - `css/styles.css`: Styles for the GitHub page, defining layout, colors, fonts, and other visual aspects.
 - `script.js`: Contains information on the image slideshow.
+- `/images`: Contains the images for the image slideshow.
 
 ## Setup Instructions
 
@@ -14,6 +15,7 @@ This project is a personal GitHub page designed to showcase my background and ex
 2. Customize the content in the `index.html` file to reflect your personal background.
 3. Modify the `css/styles.css` file to change the visual appearance of the page as desired.
 4. Modify the `script.js` file to change the image slideshow of the page as desired.
+5. Upload images to the `/images` directory for the image slideshow.
 
 ## License
 
