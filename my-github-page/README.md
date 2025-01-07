@@ -1,6 +1,6 @@
 # My GitHub Page
 
-This project is a personal GitHub page designed to showcase my background and experiences. It includes an "About Me" section that provides detailed information about who I am and what I do.
+This project is a personal GitHub page designed to showcase my background and experiences. It includes "About Me", "Key Highlights", and "Personal Information" sections that provide detailed information about who I am and what I do.
 
 ## Project Structure
 
