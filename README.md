@@ -1,5 +1,3 @@
-![Welcome to the official GitHub profile of @orlando724](https://user-images.githubusercontent.com/282759/84682528-c1d5d300-af03-11ea-9bfb-02854ad0cb20.gif)
-
 - 👋 Hi, I’m @orlando724
 - 👀 I’m interested in collaborating with others to deliver technology to organizations
 - 🌱 I’m currently learning AI at Northwestern Kellogg School of Management
