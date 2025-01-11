@@ -2,7 +2,7 @@
 - 👀 I’m interested in collaborating with others to deliver technology to organizations
 - 🌱 I’m currently learning AI at Northwestern Kellogg School of Management
 - 💞️ I’m looking to collaborate on tools and processes to make work more efficient
-- 📫 How to reach me [LinkedIn](https://www.linkedin.com/in/oquesada/) [![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-Profile-informational?style=flat&logo=linkedin&logoColor=white&color=0D76A8)](https://www.linkedin.com/in/oquesada)
+- 📫 How to reach me [LinkedIn](https://www.linkedin.com/in/oquesada/)
 - ⚡ Fun fact: my dog's name is Google
 - 💁‍♂️ Get to know me better [GitHub Pages](https://orlando724.github.io/orlando724/)
 
