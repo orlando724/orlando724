@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @orlando724
 - 👀 I’m interested in collaborating with others to deliver technology to organizations
-- 🌱 I’m currently learning AI at Northwestern Kellogg School of Management
+- 🌱 I just completed an AI Executive Certificate at Northwestern Kellogg School of Management
 - 💞️ I’m looking to collaborate on tools and processes to make work more efficient
 - 📫 How to reach me [LinkedIn](https://www.linkedin.com/in/oquesada/)
 - ⚡ Fun fact: my dog's name is Google
